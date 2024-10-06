@@ -3,21 +3,6 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: karla;
-  src: url('/assets/fonts/Karla-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: karlaItalic;
-  src: url('/assets/fonts/Karla-Italic-VariableFont_wght.ttf');
-}
-
-@font-face {
-  font-family: karlaBold;
-  src: url('/assets/fonts/static/Karla-Bold.ttf');
-}
-
 :root {
   --green200lighter: hsl(148, 38%, 91%);
   --green600medium: hsl(169, 82%, 27%);
