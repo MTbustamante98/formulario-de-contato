@@ -20,7 +20,7 @@ body {
   justify-content: center;
   background: var(--green200lighter);
   overflow-y: hidden;
-  font-family: karla;
+  font-family: 'karla';
 }
 
 textarea {
@@ -34,14 +34,13 @@ textarea:focus {
 }
 
 h1 {
-  font-family: karla;
+  font-weight: bold;
   padding-bottom: 25px;
   color: var(--grey900darker);
 }
 
 button {
-  font-family: karlaBold;
-  font-size: 1.1rem;
+  font: bold 1.1rem 'Karla', sans-serif;
   display: block;
   width: 100%;
   padding: 18px;
