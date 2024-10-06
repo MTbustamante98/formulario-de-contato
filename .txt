@@ -1,0 +1,13 @@
+Mensagens de validação
+
+ -first name
+This field is required -last name
+This field is required -email
+This field is required -message
+
+Please enter a valid email address - email
+Please select a query type -query type
+To submit this form, please consent to being contacted -checkbox
+
+Message Sent!
+Thanks for completing the form. We'll be in touch soon!

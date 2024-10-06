@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-query.css">
+  <title>Frontend Mentor | Contact form</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <main class="container">
+      <h1>Contact Us</h1>
+    <form class="formulario">
+      <div>
+        <label for="name">First Name *</label>
+        <input type="text" id="name" name="name">
+        <p id="messageFieldName" class="error"></p>
+      </div>
+      <div>
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" name="lastName">
+        <p id="messageFieldLastName" class="error"></p>
+      </div>
+      <div class="col-2">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email">
+        <p id="messageEmail" class="error"></p>
+      </div>
+      <div class="col-2">
+        <label for="type">Query Type *</label>
+          <div class="query-type-div-radio">
+            <div class="radio">
+              <input type="radio" id="query1" name="query">General Enquiry</input>
+            </div>
+            <div class="radio">
+              <input type="radio" id="query2" name="query">Support Request</input>
+            </div>
+          </div>
+          <p id="messageQueryType" class="error"></p>
+      </div>
+      <div class="col-2">
+        <label for="textarea">Message *</label>
+        <textarea rows="5" id="textarea" name="message"></textarea>
+        <p id="messageTextArea" class="error"></p>
+      </div>
+      <div class="col-2">
+        <input type="checkbox" id="checkbox">
+        <label>I consent to being contacted by the team *</label>
+      </div>
+        <div class="col-2">
+          <p id="messageCheckBox" class="error"></p>
+        </div>
+      <div class="col-2">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Matheus Bustamante</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

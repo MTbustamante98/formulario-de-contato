@@ -1,0 +1,62 @@
+@media (max-width: 1440px) {
+  body {
+    overflow-y: scroll;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .container {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+body {
+  overflow-y: scroll;
+  display: block;
+  margin-top: 30px;
+  padding-bottom: 60px;
+}
+
+textarea {
+  height: 200px;
+}
+
+.container {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.query-type-div-radio {
+  flex-direction: column;
+  width: 92%;
+}
+
+.formulario div:nth-of-type(6) {
+  display: flex;
+}
+
+.formulario div:nth-of-type(6) label {
+  max-width: 25ch;
+}
+
+[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-size: 0.825rem;
+}
+}
+

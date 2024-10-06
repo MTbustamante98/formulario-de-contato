@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: karla;
+  src: url('/assets/fonts/Karla-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: karlaItalic;
+  src: url('/assets/fonts/Karla-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: karlaBold;
+  src: url('/assets/fonts/static/Karla-Bold.ttf');
+}
+
+:root {
+  --green200lighter: hsl(148, 38%, 91%);
+  --green600medium: hsl(169, 82%, 27%);
+  --red: hsl(0, 66%, 54%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --grey500medium: hsl(186, 15%, 59%);
+  --grey900darker: hsl(187, 24%, 22%);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: var(--green200lighter);
+  overflow-y: hidden;
+  font-family: karla;
+}
+
+textarea {
+  grid-column: 2;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  background-color: var(--green200lighter);
+}
+
+h1 {
+  font-family: karla;
+  padding-bottom: 25px;
+  color: var(--grey900darker);
+}
+
+button {
+  font-family: karlaBold;
+  font-size: 1.1rem;
+  display: block;
+  width: 100%;
+  padding: 18px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  color: var(--neutral-white);
+  background-color: var(--green600medium);
+  cursor: pointer;
+}
+
+.container {
+  background: var(--neutral-white);
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.formulario .col-2 {
+  grid-column: span 2;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--grey900darker);
+}
+
+.formulario div:nth-of-type(3) {
+  padding-top: 10px;
+}
+
+.formulario div:nth-of-type(4) {
+  padding-top: 10px;
+}
+
+.formulario div:nth-of-type(5) {
+  padding-top: 10px;
+}
+
+.formulario div:nth-of-type(6) {
+  padding-top: 10px;
+}
+
+.col-2:nth-of-type(6) label {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+  width: 100%;
+  padding: 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid var(--grey500medium);
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus {
+  outline: none;
+  background-color: var(--green200lighter);
+  border-color: var(--grey900darker);
+}
+
+[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: 2px solid var(--grey500medium);
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+input[type="radio"]:checked {
+  background: url('/assets/images/icon-radio-selected.svg') no-repeat center center;
+}
+
+
+input[type="checkbox"]:checked {
+  background: url('/assets/images/icon-checkbox-check.svg') no-repeat center center;
+}
+
+.query-type-div-radio {
+  display: flex;
+  gap: 10px;
+}
+
+.query-type-div-radio .radio {
+  border: 1px solid var(--grey500medium);
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.attribution { 
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-size: 1.125rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 5px;
+  
+}
