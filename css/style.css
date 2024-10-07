@@ -142,12 +142,12 @@ button {
 }
 
 input[type="radio"]:checked {
-  background: url('/assets/images/icon-radio-selected.svg') no-repeat center center;
+  background: url('../assets/images/icon-radio-selected.svg') no-repeat center center;
 }
 
 
 input[type="checkbox"]:checked {
-  background: url('/assets/images/icon-checkbox-check.svg') no-repeat center center;
+  background: url('../assets/images/icon-checkbox-check.svg') no-repeat center center;
 }
 
 .query-type-div-radio {
