@@ -73,7 +73,7 @@ function envioFormulario(event) {
   }
 
   if(formValid) {
-    formulario.innerHTML = "<h1 style='color: var(--green600medium);'> Message Sent!</h1> <p style = >Tahnks for completing the form. We'll be in touch soon</p>"
+    formulario.innerHTML = "<h1 style='color: var(--green600medium);'> Message Sent!</h1> <p style = >Thanks for completing the form. We'll be in touch soon</p>"
     formulario.style.display = 'block'
     container.style.height = '100px'
     container.style.width = '400px'
